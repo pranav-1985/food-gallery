@@ -1,0 +1,294 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(./images/bg.jpeg);
+    color: ivory;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+/* .headlogo,.nav,.searchbar,.cart{
+    margin-right: 50px;
+} */
+.headlogo{
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+.headlogo>img {
+    width: 5em;
+    height: 4em;
+}
+.headlogo>span{
+    font-size: 30px;
+    color: rgb(216, 211, 211);
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    list-style: none;
+    font-size:22px;
+    margin-left: 0px;
+}
+#list-item{
+    margin-right: 22px;
+}
+#list-item>a{
+    text-decoration: none;
+    color: rgb(218, 217, 217);
+}
+i:hover,#list-item>a:hover,.cart>a:hover{
+    color: aquamarine;
+}
+.listlink>i{
+    font-size:13px ;
+}
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    /* Adjust width as needed */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-right: 30px;
+}
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    outline: none;
+    width:100%
+}
+.search-input::placeholder {
+    color: #bbb;
+}
+.search-button {
+    background-color: #FFD700;
+    /* Yellow color for the button */
+    border:none;
+    height: 30px;
+    width:40px;
+    cursor: pointer;
+    
+}
+.search-button i {
+    color: #000000;
+    /* Change this to adjust the icon color */
+    font-size: 16px;
+}
+button {
+    color: white;
+    margin-left: 0;
+    font-size: 0%;
+}
+button>i {
+    color: black;
+    font-size: 15px;
+    margin-left: 0%;
+}
+.search-input {
+    margin-right: 0%;
+}
+.cart>a{
+    text-decoration: none;
+    color: rgb(216, 211, 211);
+    font-size: 22px;
+}
+.cart>a>i{
+    margin-left: 10px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+}
+.title>.headding{
+    font-size: 4em;
+    line-height: 0;
+    font-family: "Oswald", system-ui;
+}
+.captionbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    line-height: 0;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.caption{
+    margin-top: 40px;
+    text-decoration: none;
+    line-height: 0;
+    font-family: "Sofadi One", system-ui;
+}
+.gallery{
+    background-color: #c3c4cc70;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+    margin-top: 50px;
+    padding-top: 80px;
+    border-radius: 1%;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.column{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #bbb;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1%;
+}
+.column>img{
+    width:300px;
+    height:300px;
+    border: 1px solid black;
+    box-shadow: 10px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.row .column:nth-child(1){
+    margin-left: 50px;
+}
+.row .column:nth-child(3){
+    margin-right: 50px;
+}
+.fooddetails{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.9em;
+    color: rgba(28, 0, 30, 0.903);
+    font-family: "Rancho", system-ui;
+    margin-top: 10px;
+}
+.foodcaption1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    font-family: "Montserrat", system-ui;
+}
+#price{
+    display: flex;
+    justify-content: flex-start;
+    font-size: .6em;
+    margin-left: 10px;
+}
+#order{
+    display: flex;
+    justify-content:flex-end;
+}
+.orderbutton{
+    height:2rem;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #383d47;
+    border: none;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+.orderbutton:hover{
+    background-color: aquamarine;
+    color: #000000;
+    font-weight: 400;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #191b1d;
+    width: 100%;
+}
+footer>div{
+    width:25%;
+    height:auto;
+    margin-right: 20px;
+}
+.div1f{
+    margin-left: 10px;
+}
+.flogo{
+    display: flex;
+    align-items: flex-start;
+}
+#fcaption{
+    margin-left: 20px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 2;
+}
+.contact>span>i{
+    width: 10px;
+    height:auto;
+    margin-right: 8px;
+}
+#recentpost{
+    font-size: 30px;
+    margin-right: 50px;
+}
+.post{
+    border-bottom: 1px solid ivory;
+    padding: 7px;
+}
+#instagram{
+    margin-bottom: 80px;
+    margin-left: 30px;
+}
+#instagram>p{
+    font-size: 30px;
+}
+.ficon{
+    margin-bottom: 10px;
+}
+.ficon>i{
+    margin-right: 20px;
+}
+.ficon>i>img{
+    width: 50px;
+    height: 50px;
+}
+
+#twitter{
+    margin-bottom: 120px;
+}
+#twitter>p{
+    font-size: 30px;
+}
+#twittercontent>p>i{
+    width: 10px;
+    height: 10px;
+}
